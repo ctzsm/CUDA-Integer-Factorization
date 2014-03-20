@@ -1,5 +1,4 @@
 #include <math.h>
-#include <time.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -7,8 +6,19 @@
 #include <cuda.h>
 #include <curand.h>
 
+#include <sys/time.h>
+
 typedef unsigned long long uint64;
 
+static double t0 = 0;
+double getTime() {
+  timeval tv;
+  gettimeofday(&tv, NULL);
+  double t = tv.tv_sec + 1e-6 * tv.tv_usec;
+  double s = t - t0;
+  t0 = t;
+  return s;
+}
 __host__ __device__ uint64 gcd(uint64 u, uint64 v) {
   uint64 shift;
   if (u == 0) return v;
@@ -144,7 +154,7 @@ uint64 pollardhost(uint64 num){
 }
 
 int main(int argc, char* argv[]) {
-  int t1 = clock();
+  getTime();
   srand(time(NULL));
 
   uint64 num = atol(argv[1]);
@@ -153,11 +163,11 @@ int main(int argc, char* argv[]) {
 
   printf("Result: %lld = %lld * %lld\n", num, result, num / result);
 
-  printf("Time  : %fs\n", 1.0 * (clock() - t1) / CLOCKS_PER_SEC);
+  printf("Time  : %6.3fs\n", getTime());
 
   int t2 = clock();
   result = pollardhost(num);
   printf("Result: %lld = %lld * %lld\n", num, result, num / result);
-  printf("Time  : %fs\n", 1.0 * (clock() - t2) / CLOCKS_PER_SEC);
+  printf("Time  : %6.3fs\n", getTime());
   return 0;
 }
