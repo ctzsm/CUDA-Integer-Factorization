@@ -163,11 +163,11 @@ int main(int argc, char* argv[]) {
 
   printf("Result: %lld = %lld * %lld\n", num, result, num / result);
 
-  printf("Time  : %6.3fs\n", getTime());
+  printf("Time  : %.6fs\n", getTime());
 
   int t2 = clock();
   result = pollardhost(num);
   printf("Result: %lld = %lld * %lld\n", num, result, num / result);
-  printf("Time  : %6.3fs\n", getTime());
+  printf("Time  : %.6fs\n", getTime());
   return 0;
 }
