@@ -121,7 +121,7 @@ uint64 pollardhost(uint64 num){
   uint64 x = 0;
   uint64 a = rand() % (upper-1) + 1;
   uint64 c = rand() % (upper-1) + 1;
-  uint64 y, d, z;
+  uint64 y, d;
 
   y = x;
   d = 1;
