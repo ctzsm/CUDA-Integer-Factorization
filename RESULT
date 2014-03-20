@@ -1,0 +1,407 @@
+>>> int("12B1F259795", 16)
+1284717778837
+>>> int("89FD383381B", 16)
+9482541414427
+>>> int("3CF5F89ED5F5", 16)
+67027135813109
+>>> int("600FF385C031", 16)
+105621626404913
+>>> int("878D4C7D68E9", 16)
+149040943425769
+>>> int("B8C8CBD2DAEE7D", 16)
+52012173456240253
+>>> int("6926C73F919FA3E7", 16)
+7576962498937463783
+
+---------------------------------------------------
+Time : 0.075109s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 1284717778837
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.070113s
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.106200s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 1284717778837
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.064318s
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.042425s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 1284717778837
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.058048s
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.115144s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 1284717778837
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.066213s
+Result: 1284717778837 = 2748371 * 467447
+Time : 0.140683s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 1284717778837
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.057967s
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.161973s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 1284717778837
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.058204s
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.162195s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 1284717778837
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.063217s
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.072322s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 1284717778837
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.062044s
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.072316s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 1284717778837
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.054558s
+^[[AResult: 1284717778837 = 467447 * 2748371
+Time : 0.243045s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 1284717778837
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.058839s
+^[[AResult: 1284717778837 = 467447 * 2748371
+Time : 0.244558s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 1284717778837
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.061689s
+^[[AResult: 1284717778837 = 467447 * 2748371
+Time : 0.242601s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 1284717778837
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.066949s
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.117463s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 1284717778837
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.067153s
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.119959s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 1284717778837
+Result: 1284717778837 = 467447 * 2748371
+Time : 0.065542s
+^[[AResult: 1284717778837 = 467447 * 2748371
+Time : 0.461852s
+-------------------------------------------------------------------------------
+
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 9482541414427
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.069359s
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.013898s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 9482541414427
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.057125s
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.074627s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 9482541414427
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.051586s
+^[[A
+Result: 9482541414427 = 1183687 * 8011021
+Time : 1.370996s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 9482541414427
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.062791s
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.291699s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 9482541414427
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.052966s
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.008249s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 9482541414427
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.067967s
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.008262s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 9482541414427
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.063163s
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.058810s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 9482541414427
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.053365s
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.556998s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 9482541414427
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.069543s
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.148198s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 9482541414427
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.058804s
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.104025s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 9482541414427
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.054590s
+Result: 9482541414427 = 8011021 * 1183687
+Time : 0.060392s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 9482541414427
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.053714s
+Result: 9482541414427 = 1183687 * 8011021
+Time : 0.102993s
+---------------------------------------------------------------------------------------
+
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 67027135813109
+Result: 67027135813109 = 12910697 * 5191597
+Time : 0.077533s
+Result: 67027135813109 = 12910697 * 5191597
+Time : 3.728454s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 67027135813109
+Result: 67027135813109 = 12910697 * 5191597
+Time : 0.073868s
+Result: 67027135813109 = 5191597 * 12910697
+Time : 0.289404s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 67027135813109
+Result: 67027135813109 = 12910697 * 5191597
+Time : 0.075278s
+Result: 67027135813109 = 12910697 * 5191597
+Time : 2.578747s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 67027135813109
+Result: 67027135813109 = 12910697 * 5191597
+Time : 0.064855s
+Result: 67027135813109 = 5191597 * 12910697
+Time : 0.108158s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 67027135813109
+Result: 67027135813109 = 12910697 * 5191597
+Time : 0.073496s
+Result: 67027135813109 = 5191597 * 12910697
+Time : 0.052316s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 67027135813109
+Result: 67027135813109 = 12910697 * 5191597
+Time : 0.062378s
+Result: 67027135813109 = 12910697 * 5191597
+Time : 1.552425s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 67027135813109
+Result: 67027135813109 = 12910697 * 5191597
+Time : 0.066924s
+Result: 67027135813109 = 5191597 * 12910697
+Time : 1.337766s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 67027135813109
+Result: 67027135813109 = 12910697 * 5191597
+Time : 0.061133s
+Result: 67027135813109 = 5191597 * 12910697
+Time : 2.383761s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 67027135813109
+Result: 67027135813109 = 12910697 * 5191597
+Time : 0.065045s
+Result: 67027135813109 = 5191597 * 12910697
+Time : 0.351936s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 67027135813109
+Result: 67027135813109 = 12910697 * 5191597
+Time : 0.079762s
+Result: 67027135813109 = 12910697 * 5191597
+Time : 2.324741s
+---------------------------------------------------------------------------------------
+
+
+
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 105621626404913
+Result: 105621626404913 = 6312217 * 16732889
+Time : 0.079235s
+Result: 105621626404913 = 16732889 * 6312217
+Time : 0.144603s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 105621626404913
+Result: 105621626404913 = 6312217 * 16732889
+Time : 0.077055s
+Result: 105621626404913 = 6312217 * 16732889
+Time : 0.443148s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 105621626404913
+Result: 105621626404913 = 6312217 * 16732889
+Time : 0.091903s
+Result: 105621626404913 = 16732889 * 6312217
+Time : 0.113473s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 105621626404913
+Result: 105621626404913 = 6312217 * 16732889
+Time : 0.076238s
+Result: 105621626404913 = 6312217 * 16732889
+Time : 1.453288s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 105621626404913
+Result: 105621626404913 = 6312217 * 16732889
+Time : 0.076994s
+Result: 105621626404913 = 6312217 * 16732889
+Time : 0.261925s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 105621626404913
+Result: 105621626404913 = 6312217 * 16732889
+Time : 0.072407s
+Result: 105621626404913 = 6312217 * 16732889
+Time : 1.264660s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 105621626404913
+Result: 105621626404913 = 6312217 * 16732889
+Time : 0.072208s
+Result: 105621626404913 = 6312217 * 16732889
+Time : 2.834355s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 105621626404913
+Result: 105621626404913 = 6312217 * 16732889
+Time : 0.077823s
+Result: 105621626404913 = 6312217 * 16732889
+Time : 1.238716s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 105621626404913
+Result: 105621626404913 = 6312217 * 16732889
+Time : 0.070316s
+Result: 105621626404913 = 6312217 * 16732889
+Time : 0.987838s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 105621626404913
+Result: 105621626404913 = 6312217 * 16732889
+Time : 0.083158s
+Result: 105621626404913 = 6312217 * 16732889
+Time : 0.330823s
+-----------------------------------------------------------------------------------
+
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 149040943425769
+Result: 149040943425769 = 13246001 * 11251769
+Time : 0.075517s
+Result: 149040943425769 = 13246001 * 11251769
+Time : 2.565176s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 149040943425769
+Result: 149040943425769 = 13246001 * 11251769
+Time : 0.084410s
+Result: 149040943425769 = 11251769 * 13246001
+Time : 4.062202s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 149040943425769
+Result: 149040943425769 = 13246001 * 11251769
+Time : 0.067828s
+Result: 149040943425769 = 13246001 * 11251769
+Time : 1.883979s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 149040943425769
+Result: 149040943425769 = 13246001 * 11251769
+Time : 0.070520s
+Result: 149040943425769 = 11251769 * 13246001
+Time : 0.737683s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 149040943425769
+Result: 149040943425769 = 13246001 * 11251769
+Time : 0.078942s
+Result: 149040943425769 = 13246001 * 11251769
+Time : 0.673810s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 149040943425769
+Result: 149040943425769 = 13246001 * 11251769
+Time : 0.073323s
+Result: 149040943425769 = 13246001 * 11251769
+Time : 2.082486s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 149040943425769
+Result: 149040943425769 = 13246001 * 11251769
+Time : 0.070876s
+Result: 149040943425769 = 11251769 * 13246001
+Time : 2.741334s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 149040943425769
+Result: 149040943425769 = 13246001 * 11251769
+Time : 0.077246s
+Result: 149040943425769 = 13246001 * 11251769
+Time : 0.659682s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 149040943425769
+Result: 149040943425769 = 13246001 * 11251769
+Time : 0.072697s
+Result: 149040943425769 = 13246001 * 11251769
+Time : 3.811092s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 149040943425769
+Result: 149040943425769 = 13246001 * 11251769
+Time : 0.088636s
+Result: 149040943425769 = 11251769 * 13246001
+Time : 2.482410s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 149040943425769
+Result: 149040943425769 = 13246001 * 11251769
+Time : 0.096918s
+Result: 149040943425769 = 11251769 * 13246001
+Time : 1.353471s
+----------------------------------------------------------------------------------------------
+
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 52012173456240253
+Result: 52012173456240253 = 228087703 * 228035851
+Time : 0.341866s
+Result: 52012173456240253 = 228035851 * 228087703
+Time : 44.100714s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 52012173456240253
+Result: 52012173456240253 = 228087703 * 228035851
+Time : 0.338838s
+Result: 52012173456240253 = 228087703 * 228035851
+Time : 22.713256s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 52012173456240253
+Result: 52012173456240253 = 228087703 * 228035851
+Time : 0.314840s
+Result: 52012173456240253 = 228035851 * 228087703
+Time : 7.473136s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 52012173456240253
+Result: 52012173456240253 = 228087703 * 228035851
+Time : 0.339774s
+Result: 52012173456240253 = 228035851 * 228087703
+Time : 6.121362s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 52012173456240253
+Result: 52012173456240253 = 228087703 * 228035851
+Time : 0.317874s
+Result: 52012173456240253 = 228087703 * 228035851
+Time : 41.752649s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 52012173456240253
+Result: 52012173456240253 = 228087703 * 228035851
+Time : 0.342507s
+Result: 52012173456240253 = 228087703 * 228035851
+Time : 46.728826s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 52012173456240253
+Result: 52012173456240253 = 228087703 * 228035851
+Time : 0.341499s
+Result: 52012173456240253 = 228087703 * 228035851
+Time : 19.058443s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 52012173456240253
+Result: 52012173456240253 = 228087703 * 228035851
+Time : 0.317903s
+Result: 52012173456240253 = 228035851 * 228087703
+Time : 23.251798s
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 52012173456240253
+Result: 52012173456240253 = 228087703 * 228035851
+Time : 0.343702s
+Result: 52012173456240253 = 228035851 * 228087703
+Time : 35.573110s
+--------------------------------------------------------------------------------------------------
+
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 7576962498937463783
+Result: 7576962498937463783 = 2045145371 * 3704852773
+Time : 0.318020s
+^C
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 7576962498937463783
+Result: 7576962498937463783 = 2045145371 * 3704852773
+Time : 0.331427s
+^C
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 7576962498937463783
+Result: 7576962498937463783 = 2045145371 * 3704852773
+Time : 0.320019s
+^C
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 7576962498937463783
+Result: 7576962498937463783 = 2045145371 * 3704852773
+Time : 0.323551s
+^C
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 7576962498937463783
+Result: 7576962498937463783 = 2045145371 * 3704852773
+Time : 0.322540s
+^C
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 7576962498937463783
+Result: 7576962498937463783 = 2045145371 * 3704852773
+Time : 0.332868s
+^C
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 7576962498937463783
+Result: 7576962498937463783 = 2045145371 * 3704852773
+Time : 0.320740s
+^C
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 7576962498937463783
+Result: 7576962498937463783 = 2045145371 * 3704852773
+Time : 0.318717s
+^C
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 7576962498937463783
+Result: 7576962498937463783 = 2045145371 * 3704852773
+Time : 0.320743s
+^C
+[ghk455@robin ~/CUDA-Integer-Factorization]$ ./factor 7576962498937463783
+Result: 7576962498937463783 = 2045145371 * 3704852773
+Time : 0.328828s
+^C
+
+
+
+
+
