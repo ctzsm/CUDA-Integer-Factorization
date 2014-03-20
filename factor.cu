@@ -9,6 +9,30 @@
 
 typedef unsigned long long uint64;
 
+uint64 gcd(uint64 u, uint64 v) {
+  int shift;
+  if (u == 0) return v;
+  if (v == 0) return u;
+  for (shift = 0; ((u | v) & 1) == 0; ++shift) {
+    u >>= 1;
+    v >>= 1;
+  }
+    
+  while ((u & 1) == 0)
+    u >>= 1;
+    
+  do {
+    while ((v & 1) == 0)
+      v >>= 1;
+    
+    if (u > v) {
+      uint64 t = v; v = u; u = t;}
+    v = v - u; 
+  } while (v != 0);
+  
+  return u << shift;
+}
+
 __device__ uint64 d_gcd(uint64 u, uint64 v) {
   int shift;
   if (u == 0) return v;
@@ -26,7 +50,7 @@ __device__ uint64 d_gcd(uint64 u, uint64 v) {
       v >>= 1;
     
     if (u > v) {
-      int64_t t = v; v = u; u = t;}
+      uint64 t = v; v = u; u = t;}
     v = v - u; 
   } while (v != 0);
   
@@ -98,15 +122,75 @@ uint64 pollard(uint64 num) {
   curandDestroyGenerator(gen);
   return result;
 }
+
+uint64 pollardhost(uint64 num){
+  uint64 upper = sqrt(num), result = 0;
+
+  if (num % 2 == 0) return 2;
+  if (num % 3 == 0) return 3;
+  if (num % 5 == 0) return 5;
+  if (num % 7 == 0) return 7;  
+
+  if (upper * upper == num) return upper;
+
+
+  bool quit = false;
+
+
+  uint64 x = 0;
+  uint64 a = rand() % (upper-1) + 1;
+  uint64 c = rand() % (upper-1) + 1;
+  uint64 y, d, z;
+
+  y = x;
+  d = 1;
+
+  do
+    {
+    x = (a * x * x + c) % num;
+    y =  a * y * y + c;
+    y = (a * y * y + c) % num;
+    uint64 z = x > y ? (x - y) : (y - x);
+    d = gcd(z,num);
+    } while (d == 1 && !quit );
+
+
+    if (d != 1 && d != num )
+    {
+    quit = true;
+    result = d;
+    }
+
+    
+    return result;
+}
+
+
+
+
+
 int main(int argc, char* argv[]) {
-  int t = clock();
-  
+  int t1 = clock();
+  srand(time(NULL));
   uint64 num = atol(argv[1]);
 
   uint64 result = pollard(num);
 
   printf("Result: %lld = %lld * %lld\n", num, result, num / result);
-  printf("Time  : %fs\n", 1.0 * (clock() - t) / CLOCKS_PER_SEC);
+  printf("Time  : %fs\n", 1.0 * (clock() - t1) / CLOCKS_PER_SEC);
+  int t2 = clock();
+  result = pollardhost(num);
+  printf("Result: %lld = %lld * %lld\n", num, result, num / result);
+  printf("Time  : %fs\n", 1.0 * (clock() - t1) / CLOCKS_PER_SEC);
   return 0;
 }
+
+
+
+
+
+
+
+
+
 
