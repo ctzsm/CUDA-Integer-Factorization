@@ -161,14 +161,3 @@ int main(int argc, char* argv[]) {
   printf("Time  : %fs\n", 1.0 * (clock() - t2) / CLOCKS_PER_SEC);
   return 0;
 }
-
-
-
-
-
-
-
-
-
-
->>>>>>> 4f9415858bf958bb7dc338d7bad05c31cb6ac7b3
