@@ -19,6 +19,7 @@ double getTime() {
   t0 = t;
   return s;
 }
+
 __host__ __device__ uint64 gcd(uint64 u, uint64 v) {
   uint64 shift;
   if (u == 0) return v;
